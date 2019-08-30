@@ -1,0 +1,67 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+#loginPage {
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(dodgerblue), to(aqua));
+  background: linear-gradient(dodgerblue, aqua);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+#loginPage #box {
+  width: 350px;
+}
+
+#registerPage {
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(dodgerblue), to(darkblue));
+  background: linear-gradient(0deg, dodgerblue, darkblue);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+#registerPage #box {
+  width: 350px;
+}
+
+#sidebar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 250px;
+  height: 100%;
+  background: #444;
+}
+
+.blog .card-img-top {
+  background-attachment: fixed;
+}
+
+.blog-content p {
+  font-size: 18px !important;
+  font-family: 'Times New Roman', Times, serif !important;
+}
+/*# sourceMappingURL=style.css.map */

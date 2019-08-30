@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+#wrap {
+  #sidebar {
+    width: 220px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: linear-gradient(225deg, #333 50%, #2d2d2d 50%);
+    // background: linear-gradient(dodgerblue, slateblue);
+    overflow-y: auto;
+
+    .sidebar-header {
+      display: block;
+      padding: 10px;
+      text-align: center;
+      color: aqua;
+      font-size: 1.35rem;
+    }
+
+    .tree {
+      margin: 20px 10px;
+      padding: 0;
+      list-style-type: none;
+
+      .tree-menu {
+        display: block;
+
+        .tree-header {
+          color: slateblue;
+          text-align: left;
+          display: block;
+          margin-bottom: 10px;
+        }
+
+        .tree-link {
+          display: block;
+          color: white;
+          padding: 5px 0;
+          font-size: 16px;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  .main-page {
+    width: calc(100% - 220px);
+    height: 100%;
+    position: fixed;
+    left: 220px;
+    top: 0;
+    overflow-y: auto;
+    background: #d7d7d7;
+
+    .navbar {
+      background: #333;
+    }
+
+    .page {
+      width: 100%;
+      // height: calc(100% - 40px);
+      padding: 20px;
+      position: relative;
+      overflow-y: auto;
+    }
+  }
+}
+
+.blog {
+
+  .card-img-top {
+    background-attachment: fixed;
+  }
+}
+
+.blog-content {
+
+  p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  #sidebar {
+    left: -220px;
+  }
+}
